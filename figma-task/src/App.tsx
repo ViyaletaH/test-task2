@@ -7,7 +7,7 @@ import StartPage from './components/StartPage';
 function App() {
   return (
     <Routes>
-      <Route path="startpage" element={<StartPage />} />
+      <Route path="start" element={<StartPage />} />
       <Route index element={<About />} />
       <Route path="contact" element={<Contact />} />
     </Routes>
