@@ -1,7 +1,6 @@
-import React from 'react';
 
 const NavLine = () => {
-  return <div></div>;
+  return <div>nav line</div>;
 };
 
 export default NavLine;

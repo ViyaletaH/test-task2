@@ -2,9 +2,9 @@ import React from 'react'
 
 const StartPage = () => {
   return (
-    <div>
-      
-    </div>
+    <h1>
+      Start page
+    </h1>
   )
 }
 

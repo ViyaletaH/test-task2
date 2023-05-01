@@ -3,15 +3,21 @@ import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
-    <div>
+    <div className="navigation">
       <Link to="/start">
-        <a className="start">Startseite</a>
+        <span className="link" id="start">
+          Startseite
+        </span>
       </Link>
       <Link to="/">
-        <a className="about">Über uns</a>
+        <span className="link" id="about">
+          Über uns
+        </span>
       </Link>
       <Link to="/contact">
-        <a className="contact">Kontakt</a>
+        <span className="link" id="contact">
+          Kontakt
+        </span>
       </Link>
     </div>
   );
