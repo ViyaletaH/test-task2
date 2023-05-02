@@ -19,11 +19,11 @@ body {
   .header {
     display: flex;
     width: 100%;
-    height: 10.4%;
+    max-height: 10.4%;
+    min-height: 10.4%;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 3px 0px 0px rgba(72, 72, 72, 0.232);
-
 
     .logo {
       width: 137px;
@@ -66,7 +66,32 @@ body {
       #about {
         margin: 0 24px 0 24px;
       }
+    }
+  }
 
+  .nav-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 0px 30px 0px;
+    width: 170px;
+    height: fit-content;
+    margin-right: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    margin-left: 8.5%;
+    .startseite {
+      color: #667085;
+    }
+
+    .nav-arrow {
+      color: #667085;
+      font-weight: bold;
+    }
+
+    .current {
+      font-weight: bold;
+      color: #204497;
     }
   }
 }
