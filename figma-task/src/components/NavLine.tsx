@@ -1,13 +1,20 @@
+import { Link } from 'react-router-dom';
 
 const NavLine = () => {
-  return <div className="nav-line">
-  <div className="home">
-    <img src="/public/home.png" alt="home" width="19px" height="19px"/>
-  </div>
-  <span className="startseite">Startseite</span>
-  <span className="nav-arrow">&gt;</span>
-  <span className="current">Uber uns</span>
-</div>;
+  return (
+    <div className="nav-line">
+      <div className="home">
+        <img src="/home.png" alt="home" width="20px" height="20px" />
+      </div>
+      <Link to="/start">
+        <span className="startseite">Startseite</span>
+      </Link>
+      <span className="nav-arrow">&gt;</span>
+      <Link to="/">
+      <span className="current">Uber uns</span>
+      </Link>
+    </div>
+  );
 };
 
 export default NavLine;

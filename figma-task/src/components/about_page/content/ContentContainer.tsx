@@ -4,7 +4,7 @@ import RightSideContent from './RightSideContent';
 
 const ContentContainer = () => {
   return (
-    <div>
+    <div className='content-container'>
       <NameBar />
       <LeftSideContent />
       <RightSideContent />
