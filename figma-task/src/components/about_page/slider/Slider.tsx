@@ -3,10 +3,10 @@ import RightArrow from './RightArrow';
 
 const Slider = () => {
   return (
-    <div>
+    <div className="slider" >
       <LeftArrow />
-      <div className="slider"></div>
-      <RightArrow/>
+      <div id="card-holder"></div>
+      <RightArrow />
     </div>
   );
 };

@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const RightArrow = () => {
   return (
-    <div>
-      
+    <div className="arrow">
+      <img src="/arrow.png" alt="right arrow" id="right-arrow" className="arrow-img" />
     </div>
-  )
-}
+  );
+};
 
-export default RightArrow
+export default RightArrow;

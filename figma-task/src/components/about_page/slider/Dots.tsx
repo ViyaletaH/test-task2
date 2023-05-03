@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 const Dots = () => {
   return (
-    <div>
-      
+    <div className="dots">
+      <div className="dot" id="dot-first"></div>
+      <div className="dot" id="dot-second"></div>
+      <div className="dot" id="dot-third"></div>
     </div>
-  )
-}
+  );
+};
 
-export default Dots
+export default Dots;

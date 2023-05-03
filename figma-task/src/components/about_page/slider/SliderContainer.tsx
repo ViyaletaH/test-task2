@@ -5,7 +5,7 @@ import React from 'react';
 
 const SliderContainer = () => {
   return (
-    <div>
+    <div className='slider-container'>
       <Slider />
       <Dots />
     </div>
