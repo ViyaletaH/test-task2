@@ -370,6 +370,9 @@ body {
             width: 223px;
             height: 260px;
             margin: 0;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+            cursor: pointer;
 
             .photo {
               max-width: 100%;
@@ -392,11 +395,19 @@ body {
         justify-content: center;
         margin-top: 2.5%;
 
+        .arrow-img {
+          cursor: pointer;
+        }
+
+        .disabled-arrow {
+          cursor: auto;
+          filter: invert(50%);
+        }
+
         #left-arrow {
           width: 30px;
           height: 40px;
           margin-left: 100%;
-          cursor: pointer;
         }
 
         #right-arrow {
@@ -404,8 +415,6 @@ body {
           width: 30px;
           height: 40px;
           margin-left: 32%;
-          cursor: pointer;
-
         }
       }
     }
@@ -436,3 +445,13 @@ body {
     }
   }
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+

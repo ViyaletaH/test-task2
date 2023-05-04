@@ -33,16 +33,17 @@ const Slider = ({ onSlideChange }: SliderProps) => {
 
   return (
     <div className="slider">
-      <LeftArrow onClick={goToLeftSlide} />
+      <LeftArrow onClick={goToLeftSlide} slideNum={currentSlide} />
       <div id="card-holder">
         <div className={`${currentSlide === 0 ? 'current-slide' : 'slide'}`}>
-          {firstSlideCards.map((card) => (
+        {firstSlideCards.map((card) => (
             <div
+            key={card.photo}
               className={`${
                 card.cardId === 1 || card.cardId === 5 ? `card-${card.cardId}` : 'card'
               }`}
               style={{
-                backgroundImage: card.photo !== '' ? `url(${card.photo})` : `url(./logo.png)`,
+                backgroundImage: card.photo !== '' ? `url( /${card.photo})` : `url(./logo.png)`,
                 backgroundPosition: 'center',
                 backgroundSize: card.photo !== '' ? 'cover' : 'contain',
                 backgroundRepeat: 'no-repeat',
@@ -54,6 +55,7 @@ const Slider = ({ onSlideChange }: SliderProps) => {
         <div className={`${currentSlide === 1 ? 'current-slide' : 'slide'}`}>
           {secondSlideCards.map((card) => (
             <div
+            key={card.photo}
               className={`${
                 card.cardId === 1 || card.cardId === 5 ? `card-${card.cardId}` : 'card'
               }`}
@@ -70,6 +72,7 @@ const Slider = ({ onSlideChange }: SliderProps) => {
         <div className={`${currentSlide === 2 ? 'current-slide' : 'slide'}`}>
           {thirdSlideCards.map((card) => (
             <div
+            key={card.photo}
               className={`${
                 card.cardId === 1 || card.cardId === 5 ? `card-${card.cardId}` : 'card'
               }`}
@@ -84,7 +87,7 @@ const Slider = ({ onSlideChange }: SliderProps) => {
           ))}
         </div>
       </div>
-      <RightArrow onClick={goToRightSlide} />
+      <RightArrow onClick={goToRightSlide} slideNum={currentSlide} />
     </div>
   );
 };

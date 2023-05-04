@@ -2,12 +2,13 @@ import { MouseEventHandler } from "react";
 
 interface RightArrowProps {
   onClick: MouseEventHandler<HTMLImageElement>;
+  slideNum: number;
 }
 
-const RightArrow = ({ onClick }: RightArrowProps) => {
+const RightArrow = ({ onClick, slideNum }: RightArrowProps) => {
   return (
     <div className="arrow">
-      <img src="/arrow.png" alt="right arrow" id="right-arrow" className="arrow-img" onClick={onClick} />
+      <img src="/arrow.png" alt="right arrow" id="right-arrow" className={`${slideNum !== 2 ? "arrow-img" : "disabled-arrow"}`} onClick={onClick} />
     </div>
   );
 };
