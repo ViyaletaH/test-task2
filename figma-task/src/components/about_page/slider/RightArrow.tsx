@@ -1,9 +1,13 @@
-import React from 'react';
+import { MouseEventHandler } from "react";
 
-const RightArrow = () => {
+interface RightArrowProps {
+  onClick: MouseEventHandler<HTMLImageElement>;
+}
+
+const RightArrow = ({ onClick }: RightArrowProps) => {
   return (
     <div className="arrow">
-      <img src="/arrow.png" alt="right arrow" id="right-arrow" className="arrow-img" />
+      <img src="/arrow.png" alt="right arrow" id="right-arrow" className="arrow-img" onClick={onClick} />
     </div>
   );
 };
