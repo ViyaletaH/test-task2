@@ -17,7 +17,6 @@ const About = () => {
   const handleOverlayClick = (index: number, photo: string) => {
     setShowOverlay(true);
     setCardOpen({ index, photo });
-    console.log('clicked');
   };
 
   const handleClosure = () => {
@@ -30,7 +29,7 @@ const About = () => {
       <Header />
       <NavLine />
       <ContentContainer />
-      <SliderContainer onDotColorChange={handleDotColorChange} overlayClick={handleOverlayClick}/>
+      <SliderContainer onDotColorChange={handleDotColorChange} overlayClick={handleOverlayClick} ></SliderContainer>
     </div>
   );
 };
