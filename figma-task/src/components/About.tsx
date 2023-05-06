@@ -26,6 +26,7 @@ const About = () => {
   return (
     <div className="about-container">
       {showOverlay && <OpenCard data={cardOpen} onCrossClick={handleClosure} />}
+      <div className="darken-open"></div>
       <Header />
       <NavLine />
       <ContentContainer />

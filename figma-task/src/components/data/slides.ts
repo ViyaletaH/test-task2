@@ -35,7 +35,7 @@ const firstSlideCards: Array<Card> = [
 const secondSlideCards: Array<Card> = [
   {
     cardId: 0,
-    photo: 'sing1.jpg',
+    photo: 'sing1.webp',
   },
   {
     cardId: 1,
@@ -52,7 +52,7 @@ const secondSlideCards: Array<Card> = [
   },
   {
     cardId: 4,
-    photo: 'sing5.jpg',
+    photo: 'sing5.webp',
   },
   {
     cardId: 5,
@@ -123,7 +123,7 @@ const allCards: Array<Card> = [
 
   {
     cardId: 6,
-    photo: 'sing1.jpg',
+    photo: 'sing1.webp',
     location: 'Singapore',
   },
   {
@@ -144,7 +144,7 @@ const allCards: Array<Card> = [
   },
   {
     cardId: 10,
-    photo: 'sing5.jpg',
+    photo: 'sing5.webp',
     location: 'Singapore',
   },
   {
