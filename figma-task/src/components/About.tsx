@@ -9,6 +9,7 @@ const About = () => {
   const [showOverlay, setShowOverlay] = useState(false);
   const [cardOpen, setCardOpen] = useState<{ index: number; photo: string } | null>(null);
   const [arrNum, setArrNum] = useState(1);
+  const [darkenPos, setDarkenPos] = useState(false);
 
   const handleDotColorChange = (dotColor: number) => {
     setArrNum(dotColor);
@@ -23,11 +24,15 @@ const About = () => {
     setShowOverlay(false);
   };
 
+  const handleDarken = (linesClicked: boolean) => {
+    setDarkenPos(linesClicked);
+  }
+
   return (
     <div className="about-container">
       {showOverlay && <OpenCard data={cardOpen} onCrossClick={handleClosure} />}
-      <div className="darken-open"></div>
-      <Header />
+      {darkenPos && <div className="darken-open"/>}
+      <Header handleDarken={handleDarken} />
       <NavLine />
       <ContentContainer />
       <SliderContainer onDotColorChange={handleDotColorChange} overlayClick={handleOverlayClick} ></SliderContainer>

@@ -1,9 +1,12 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Navigation = () => {
+interface NavigationProps {
+  clicked: boolean;
+}
+
+const Navigation = ({ clicked }: NavigationProps) => {
   return (
-    <div className="navigation">
+    <div className={`${clicked !== true ? 'navigation' : 'navigation-open'}`}>
       <Link to="/start">
         <span className="link" id="start">
           Startseite
