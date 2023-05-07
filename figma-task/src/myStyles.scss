@@ -1811,8 +1811,8 @@ body {
     .slider-container {
       width: 400px;
       margin-top: 60px;
-      height: 760px;
-      min-height: 760px;
+      height: fit-content;
+      min-height: 810px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1825,14 +1825,14 @@ body {
         height: 100%;
         align-items: center;
         justify-content: center;
-        padding-right: 5%;
+        padding-right: 0%;
         z-index: 90;
         #card-holder {
           overflow-x: auto;
           scroll-snap-type: x mandatory;
           scroll-behavior: smooth;
           min-height: 100%;
-          margin-left: 2.3%;
+          margin-left: 4.3%;
           min-width: 81.3%;
           display: flex;
           align-items: center;
@@ -1858,17 +1858,19 @@ body {
             z-index: 90;
             display: flex;
             flex-wrap: wrap;
-            flex-direction: column;
             justify-content: space-between;
             align-content: space-between;
             padding: 0;
 
+            .card {
+              width: 146px;
+              height: 170px;
+            }
+
             .card,
             .card-5,
             .card-1 {
-              width: 146px;
-              height: 170px;
-              margin: 0;
+              margin-bottom: 16px;
               opacity: 0;
               animation: fadeIn 1s ease-in-out forwards;
               cursor: pointer;
@@ -1883,8 +1885,17 @@ body {
             .card-5,
             .card-1 {
               flex-basis: 48%;
+              min-width: 308px;
               width: 308px;
               height: 171px;
+            }
+
+            .card-1 {
+              order: -1;
+            }
+
+            #card-4, #card-3 {
+              order: 1;
             }
           }
         }
@@ -1909,7 +1920,7 @@ body {
           #left-arrow {
             width: 30px;
             height: 40px;
-            margin-right: 35%;
+            margin-right: 80%;
           }
 
           #right-arrow {

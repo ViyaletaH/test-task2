@@ -66,6 +66,7 @@ const Slider = ({ onSlideChange, overlayClick }: SliderProps) => {
               className={`${
                 card.cardId === 1 || card.cardId === 5 ? `card-${card.cardId}` : 'card'
               }`}
+              id={`card-${card.cardId}`}
               style={{
                 backgroundImage: card.photo !== '' ? `url(/${card.photo})` : `url(./logo.png)`,
                 backgroundPosition: 'center',
