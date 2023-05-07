@@ -33,7 +33,7 @@ const OpenCard = ({ data, onCrossClick }: OpenCardProps) => {
                 }}
                 alt="city view"
               />
-              <span>Office location: {card.location}</span>
+              <span className="location">Office location: {card.location}</span>
             </div>
           )}
         </div>
