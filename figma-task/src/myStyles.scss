@@ -1544,17 +1544,16 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      margin: 0px 0px 27px 0px;
+      margin: 42px 0px 42px 0px;
       width: 210px;
-      min-height: fit-content;
+      min-height: 24px;
       margin-right: auto;
       font-family: 'Poppins', sans-serif;
       font-size: 14px;
       margin-left: 5%;
-      margin-bottom: 235px;
 
       .home {
-        width:24px;
+        width: 24px;
         height: 24px;
       }
       .startseite {
@@ -1563,7 +1562,7 @@ body {
 
       .nav-arrow {
         color: #667085;
-        font-weight:500;
+        font-weight: 500;
         font-size: 19px;
         padding-left: 5px;
       }
@@ -1576,10 +1575,15 @@ body {
     }
 
     .content-container {
-      width: 100%;
+      min-width: 380px;
+      max-width: 380px;
       height: fit-content;
+      align-items: center;
+      margin-bottom: 287px;
+      margin-left: 2.5%;
       .name-bar {
-        height: 80px;
+        height: 34px;
+        width: 384px;
         position: relative;
         display: flex;
         .about-name {
@@ -1587,35 +1591,38 @@ body {
           position: absolute;
           z-index: 90;
           font-family: 'Poppins', 'sans-serif';
-          font-size: 52px;
+          font-size: 22px;
           font-weight: bold;
           align-items: center;
           justify-content: center;
           color: #fff;
           min-width: 100%;
-          margin-left: 8.5%;
+          margin-left: 7.5%;
           padding-top: 2px;
         }
 
         .name-bg {
           margin-left: auto;
-          margin-right: 0;
+          width: 100%;
+          margin-right: 10%;
           float: right;
           position: absolute;
           z-index: 89;
-          margin-left: 8.9%;
-          width: calc(100% - 8.9%);
+          margin-left: 8%;
+          width: 140%;
         }
       }
 
       .left-side {
         margin-top: 25px;
-        float: left;
+        float:none;
         width: 100%;
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
 
         .left-side-ph {
+          order: 1;
           display: flex;
           flex-direction: column;
           position: relative;
@@ -1639,77 +1646,81 @@ body {
         }
 
         .left-side-text {
-          width: 536px;
+          width: 367px;
           height: 100%;
+          padding: 1px;
           display: flex;
           flex-direction: column;
           .introductory-p {
             color: #546e7a;
-            font-size: 14px;
+            font-size: 18px;
             font-family: 'Poppins', 'sans-serif';
             font-weight: bold;
-            line-height: 20px;
-            width: 430px;
-            padding-left: 5px;
-            text-align: justify;
+            line-height: 23.5px;
+            width: 363px;
+            padding-left: 6px;
+            display: flex;
+            flex-wrap: wrap;
 
             #lorem {
-              width: 430px;
-              word-spacing: 4px;
-              margin-bottom: 1px;
+              width: 275px;
+              word-spacing:0%;
+              margin-bottom: auto;
             }
 
             #cras {
-              width: 430px;
-              word-spacing: 4px;
+              width: auto;
+              word-spacing:normal;
             }
 
             #rutum {
-              width: 430px;
-              word-spacing: 4px;
+              width: auto;
+              word-spacing:normal;
             }
 
             #convallis {
-              width: 430px;
-              word-spacing: 11px;
-              margin-top: 2px;
+              width:auto;
+              word-spacing:normal;
+              margin-top: auto;
             }
 
             #quis {
-              margin-top: 3px;
-              word-spacing: 1px;
+              margin-top: auto;
+              word-spacing:normal;
             }
           }
 
           .left-p {
-            margin-top: 13px;
+            margin-top: 30px;
             color: #546e7a;
-            font-size: 11px;
+            font-size: 14px;
             font-family: 'Poppins', 'sans-serif';
-            line-height: 19px;
-            width: 430px;
-            padding-left: 5px;
-            text-align: justify;
+            line-height: 23px;
+            width: 95%;
+            padding-left: 12px;
 
             #left-p-first {
-              word-spacing: 1px;
+              height: 120px;
+              word-spacing: 0px;
+
             }
 
             #left-p-second {
-              margin-top: 19px;
+              margin-top: 39px;
+              word-spacing: 0px;
             }
 
             #left-p-third {
               padding-top: 3px;
-              word-spacing: 2px;
-              line-height: 19px;
-              word-spacing: 1px;
+              word-spacing: 0px;
+              line-height: 23px;
             }
 
             #left-p-fourth {
-              margin-top: 20px;
-              word-spacing: 1px;
-              line-height: 19px;
+              margin-top: 40px;
+              word-spacing: 1.5px;
+              line-height: 22px;
+
             }
           }
         }

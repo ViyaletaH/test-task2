@@ -1,7 +1,6 @@
 import LeftArrow from './LeftArrow';
 import RightArrow from './RightArrow';
 import { useState, useEffect } from 'react';
-import '/src/myStyles.scss';
 import { firstSlideCards, secondSlideCards, thirdSlideCards } from '../../data/slides';
 
 interface SliderProps {
